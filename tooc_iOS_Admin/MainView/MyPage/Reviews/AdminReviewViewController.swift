@@ -40,6 +40,9 @@ class AdminReviewViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.addBackButton("black")
+    }
     func makeReviewTime(time:Int?) ->String{
         let timeStamp = gino(time)/1000
         let date = Date(timeIntervalSince1970: Double(gino(timeStamp)))
