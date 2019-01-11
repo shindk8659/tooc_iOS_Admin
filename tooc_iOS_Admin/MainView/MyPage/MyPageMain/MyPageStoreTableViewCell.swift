@@ -10,6 +10,13 @@ import UIKit
 
 class MyPageStoreTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var workingImg: UIImageView!
+    @IBOutlet weak var storeNameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var oldAddressLabel: UILabel!
+    @IBOutlet weak var storeTimeLabel: UILabel!
+    @IBOutlet weak var storeWebsiteLabel: UILabel!
+    @IBOutlet weak var storePhoneLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

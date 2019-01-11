@@ -20,6 +20,7 @@ class QRScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         super.viewDidLoad()
     
        
+        self.addBackButton("white")
         let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
         do{
             let input = try AVCaptureDeviceInput(device: captureDevice!)

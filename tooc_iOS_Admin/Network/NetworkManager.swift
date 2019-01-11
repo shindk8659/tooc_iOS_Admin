@@ -115,7 +115,7 @@ class NetworkManager {
     
     func getStoreReview(completion: @escaping(StoreReviewModel?,ErrorModel?,Error?) -> Void) {
         let header:HTTPHeaders = [
-            "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdHkiOiJBRE1JTiIsImlzcyI6ImRtemluZyIsImV4cCI6MTU1NTg1OTAzNCwiZW1haWwiOiI0MiJ9.R6VIksuF8GEH31hd_JFdumEky5oY8ZS3hxyoJW4cuQA"
+            "jwt": gsno(jwt)
         ]
         
         let router = APIRouter(url: "/api/owner/review", method: .get, parameters: nil, headers: header)
@@ -129,4 +129,38 @@ class NetworkManager {
         
         
     }
+    
+    
+    func getMyPage(completion: @escaping(MyPageMainModel?,ErrorModel?,Error?) -> Void) {
+        let header:HTTPHeaders = [
+            "jwt": gsno(jwt)
+        ]
+        
+        let router = APIRouter(url: "/api/owner/mypage", method: .get, parameters: nil, headers: header)
+        NetworkRequester(with: router).request1 { (storereview: MyPageMainModel?, errorModel:ErrorModel?, error) in
+            guard error == nil else {
+                completion(nil,errorModel,error)
+                return
+            }
+            completion(storereview,errorModel,error)
+        }
+        
+        
+    }
+    
+    func reserveSwitch(completion: @escaping (ErrorModel?,ErrorModel?,Error?) -> Void) {
+        let header:HTTPHeaders = [
+            "jwt": gsno(jwt)
+        ]
+        let router = APIRouter(url:"/api/owner/mypage/onoff", method: .put, parameters: nil, headers: header)
+        NetworkRequester(with: router).request1 { (result: ErrorModel?, errorModel:ErrorModel? , error) in
+            guard error == nil else {
+                completion(nil,errorModel,error)
+                return
+            }
+            completion(result,errorModel,error)
+        }
+    }
+    
+    
 }
