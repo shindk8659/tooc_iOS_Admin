@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol changeTabProtocol {
+    func changeTabViewController(code: String)
+}
+
 class RVNumberScanViewController: UIViewController {
 
     @IBOutlet var bgView: UIView!
@@ -15,8 +19,15 @@ class RVNumberScanViewController: UIViewController {
     @IBOutlet var RVnumberTF: UITextField!
     
     @IBAction func didPressConfirmation(_ sender: UIButton) {
-        scanCode()
-//        self.dismiss(animated: true, completion: nil)
+        
+        if RVnumberTF.text?.isEmpty == true {
+            showAlertMessage(titleStr: "", messageStr: "코드를 입력해주세요.")
+        } else {
+        let code = RVnumberTF.text
+            self.dismiss(animated: true) {
+                self.delegate.changeTabViewController(code: code!)
+            }
+        }
     }
     
     @IBAction func didPressCancel(_ sender: Any) {
@@ -24,6 +35,8 @@ class RVNumberScanViewController: UIViewController {
     }
     
     let networkManager = NetworkManager()
+    var delegate: changeTabProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSetup()
@@ -32,39 +45,6 @@ class RVNumberScanViewController: UIViewController {
     func layoutSetup() {
         bgView.layer.cornerRadius = 8
         confirmBtn.layer.cornerRadius = 15
-    }
-    
-    func scanCode() {
-        let code = RVnumberTF.text ?? ""
-        networkManager.getReservationInfo(code: code) {[weak self] (info, errorModel, error) in
-            if info == nil && errorModel == nil && error != nil {
-                self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.1")
-            }
-            else if info == nil && errorModel != nil && error == nil {
-                let msg = errorModel?.message ?? "통신오류"
-                print(errorModel)
-                self?.showAlertMessage(titleStr:"", messageStr: msg)
-            }
-            else {
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationDetailViewController") as! ReservationDetailViewController
-                
-                vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_reservation_gray_tab"),tag: 1)
-                vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
-                
-                vc.bagDtolList = (info?.bagDtoList)!
-                vc.bagimgurl = (info?.bagImgDtos)!
-                vc.endTime = ((info?.endTime!)!)
-                vc.payType = (info?.payType)!
-                vc.price = (info?.price)!
-                vc.progressType = (info?.progressType)!
-                vc.reserveIdx = (info?.reserveIdx)!
-                vc.startTime = (info?.startTime)!
-                vc.userName1 = (info?.userName)!
-                vc.userPhone1 = (info?.userPhone)!
-                self?.tabBarController?.viewControllers![1] = vc
-                self?.tabBarController?.selectedIndex = 1
-            }
-        }
     }
     
 }
