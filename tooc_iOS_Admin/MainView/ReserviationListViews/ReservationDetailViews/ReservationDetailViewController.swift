@@ -9,7 +9,7 @@
 import UIKit
 
 class ReservationDetailViewController: UITableViewController {
-
+    
     @IBOutlet var bgImgView: UIImageView!
     @IBOutlet var detailView: UIView!
     @IBOutlet var storeBtn: UIButton!
@@ -31,7 +31,7 @@ class ReservationDetailViewController: UITableViewController {
     @IBOutlet var totalTime: UILabel!
     @IBOutlet var totalRate: UILabel!
     
-    @IBOutlet var paymentProgress: UIButton!
+    @IBOutlet var payCheck: UIImageView!
     @IBOutlet var totalRateOfPayment: UILabel!
     
     @IBOutlet var userLuggageImg: [UIImageView]!
@@ -45,11 +45,25 @@ class ReservationDetailViewController: UITableViewController {
     @IBAction func didPressStore(_ sender: UIButton) {
     }
     
-    var bagDtolList: [[String:Any]] = []
+    var bagDtolList:[BagDtoList] = []
+    var bagimgurl:[BagImgDtos] = []
+    var startTime: Int = 0
+    var endTime: Int = 0
+    var overTime: Int = 0
+    var payType: String = ""
+    var reserveIdx: Int = 0
+    var userName1: String = ""
+    var userPhone1: String = ""
+    var progressType: String = ""
+    var stateType: String = ""
+    var price: Int = 0
+    var totalCount = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSetup()
+        
     }
     
     func layoutSetup() {
@@ -65,6 +79,66 @@ class ReservationDetailViewController: UITableViewController {
         detailView.layer.shadowOffset = CGSize(width: 0, height: 0)
         
         storeBtn.layer.cornerRadius = storeBtn.frame.width / 13
+    }
+    
+    func update() {
+        
+        userName.text = userName1
+        phoneNumb.text = userPhone1
+        payment.text = payType
+        totalLuggage.text = "총 \(totalCount)개"
+        
+        let open = Date(timeIntervalSince1970: TimeInterval(startTime/1000))
+        let close = Date(timeIntervalSince1970: TimeInterval(endTime/1000))
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier:"ko_KR")
+        dateFormatter.dateFormat = "yy년 M월 d일 E요일"
+        checkDate.text = dateFormatter.string(from: open)
+        findDate.text = dateFormatter.string(from: close)
+        dateFormatter.dateFormat = "a h시 m분"
+        checkTime.text = dateFormatter.string(from: open)
+        findTime.text = dateFormatter.string(from: close)
+        
+        let timeInterval = open.timeIntervalSince(close)
+        let date = Date(timeIntervalSince1970: timeInterval)
+        dateFormatter.dateFormat = "총 h시간 m분"
+        totalTime.text = dateFormatter.string(from: date)
+        totalRate.text = "\(price)원 X \(totalCount)개"
+        
+        totalRateOfPayment.text = "\(price*totalCount)원"
+        
+        if progressType == "DONE" {
+            payCheck.image = UIImage(named: "reservePayRect")
+        }
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        for bag in bagDtolList {
+            switch bag.bagType {
+            case "CARRIER":
+                let count = bag.bagCount ?? 0
+                self.totalCount += count
+                suitcaseRate.text = "\(count)개: \(price)원"
+            case "ETC":
+                let count = bag.bagCount ?? 0
+                self.totalCount += count
+                luggageRate.text = "\(count)개: \(price)원"
+            default: break
+            }
+        }
+        
+        
+        
+        
     }
 
     

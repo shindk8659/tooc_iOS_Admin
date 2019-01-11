@@ -757,29 +757,28 @@
                                                             <color key="textColor" red="0.1215686275" green="0.74901960779999999" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETO-vf-gdM">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box_pay_no" translatesAutoresizingMaskIntoConstraints="NO" id="iUl-KH-31B">
                                                             <rect key="frame" x="290" y="19" width="67" height="22"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="67" id="Bbd-N1-1gZ"/>
-                                                                <constraint firstAttribute="height" constant="22" id="c5Z-uA-0wm"/>
+                                                                <constraint firstAttribute="width" constant="67" id="bNv-V6-WPp"/>
+                                                                <constraint firstAttribute="height" constant="22" id="rO4-ma-VyZ"/>
                                                             </constraints>
-                                                            <state key="normal" image="reservePayRect"/>
-                                                        </button>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="jNE-nZ-u8g" firstAttribute="leading" secondItem="aZZ-C5-VuI" secondAttribute="leading" id="25n-QN-MBc"/>
-                                                        <constraint firstItem="ETO-vf-gdM" firstAttribute="trailing" secondItem="U32-eB-62j" secondAttribute="trailing" id="6B4-82-mya"/>
                                                         <constraint firstItem="U32-eB-62j" firstAttribute="top" secondItem="aZZ-C5-VuI" secondAttribute="bottom" constant="18" id="8b1-GU-30V"/>
                                                         <constraint firstAttribute="trailing" secondItem="U32-eB-62j" secondAttribute="trailing" constant="18" id="9Wh-Ne-gxs"/>
                                                         <constraint firstItem="yVh-S6-DMO" firstAttribute="centerY" secondItem="jNE-nZ-u8g" secondAttribute="centerY" id="GUw-u9-BPb"/>
                                                         <constraint firstAttribute="trailing" secondItem="yVh-S6-DMO" secondAttribute="trailing" constant="24" id="K2j-LX-f9I"/>
                                                         <constraint firstItem="jNE-nZ-u8g" firstAttribute="top" secondItem="U32-eB-62j" secondAttribute="bottom" constant="25" id="aEy-4i-R37"/>
                                                         <constraint firstItem="aZZ-C5-VuI" firstAttribute="leading" secondItem="975-Og-j5O" secondAttribute="leading" constant="18" id="itx-TJ-rlt"/>
+                                                        <constraint firstItem="iUl-KH-31B" firstAttribute="trailing" secondItem="U32-eB-62j" secondAttribute="trailing" id="j5p-Tb-lDO"/>
                                                         <constraint firstItem="U32-eB-62j" firstAttribute="leading" secondItem="975-Og-j5O" secondAttribute="leading" constant="20" id="j9q-Ab-UGk"/>
                                                         <constraint firstAttribute="bottom" secondItem="jNE-nZ-u8g" secondAttribute="bottom" constant="16" id="lSd-v8-kVa"/>
                                                         <constraint firstItem="aZZ-C5-VuI" firstAttribute="top" secondItem="975-Og-j5O" secondAttribute="top" constant="18" id="uhk-Ms-yBz"/>
-                                                        <constraint firstItem="ETO-vf-gdM" firstAttribute="centerY" secondItem="aZZ-C5-VuI" secondAttribute="centerY" id="yDc-9N-euS"/>
+                                                        <constraint firstItem="iUl-KH-31B" firstAttribute="centerY" secondItem="aZZ-C5-VuI" secondAttribute="centerY" id="xJO-sp-KBD"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -938,8 +937,8 @@
                         <outlet property="findDate" destination="vCk-s7-oFO" id="qTw-UN-HOQ"/>
                         <outlet property="findTime" destination="Q9s-xv-Q6r" id="Usf-J3-nFJ"/>
                         <outlet property="luggageRate" destination="MeP-ur-Dry" id="BkJ-wi-nb2"/>
-                        <outlet property="payment" destination="zIK-Sr-eTh" id="pa9-at-jSL"/>
-                        <outlet property="paymentProgress" destination="ETO-vf-gdM" id="NnL-Ns-tyk"/>
+                        <outlet property="payCheck" destination="iUl-KH-31B" id="IXn-Sy-iZd"/>
+                        <outlet property="payment" destination="jNE-nZ-u8g" id="Uh9-qI-I9X"/>
                         <outlet property="phoneNumb" destination="mJg-vd-xLe" id="bq3-f1-2nD"/>
                         <outlet property="reservationCode" destination="pgG-uk-Vym" id="eZf-wQ-sYP"/>
                         <outlet property="storeBtn" destination="UkM-Uo-dpa" id="HmW-aJ-fha"/>
@@ -956,7 +955,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2S3-qS-l9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="301"/>
+            <point key="canvasLocation" x="2180" y="300.73891625615767"/>
         </scene>
         <!--Pop Up Controller-->
         <scene sceneID="bDa-vM-iWX">
@@ -3213,7 +3212,7 @@ Cg
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울시 동대문구 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foE-jH-ry2">
-                                                    <rect key="frame" x="85.000000000000014" y="64" width="166.33333333333337" height="16.333333333333329"/>
+                                                    <rect key="frame" x="85" y="64" width="154" height="16.333333333333329"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16.329999999999998" id="OZu-xL-3Qc"/>
                                                     </constraints>
@@ -3267,7 +3266,7 @@ Cg
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동대문엽기떡볶이 홍대점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dci-jb-yLP">
-                                                    <rect key="frame" x="64.000000000000014" y="19" width="208.33333333333337" height="29"/>
+                                                    <rect key="frame" x="64" y="19" width="196" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="JwI-ja-rfx"/>
                                                     </constraints>
@@ -3324,7 +3323,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae7-yR-BTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="1972.9064039408868"/>
+            <point key="canvasLocation" x="2308" y="1880"/>
         </scene>
         <!--나의 리뷰-->
         <scene sceneID="1be-2X-wGj">
@@ -3559,12 +3558,13 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXt-77-29l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3012" y="1972.9064039408868"/>
+            <point key="canvasLocation" x="3054" y="1880"/>
         </scene>
     </scenes>
     <resources>
         <image name="bgHalfAndHalf" width="375" height="239"/>
         <image name="boxShadowList" width="324.33334350585938" height="84"/>
+        <image name="box_pay_no" width="72" height="24"/>
         <image name="btCircleEmpty" width="20" height="20"/>
         <image name="btScan" width="240" height="53"/>
         <image name="btSettings" width="16" height="16"/>
@@ -3592,7 +3592,6 @@ Cg
         <image name="lineGradationSecond" width="2" height="78"/>
         <image name="lineMint" width="301" height="2"/>
         <image name="reservationBtPhoto" width="82" height="27.666666030883789"/>
-        <image name="reservePayRect" width="67" height="22"/>
         <image name="reviewIcStar" width="16" height="16"/>
         <image name="reviewIcStarGray" width="16" height="16"/>
         <image name="setting_bt_ok" width="120" height="40"/>

@@ -11,11 +11,6 @@ import UIKit
 class MyPageSettingTableViewController: UITableViewController {
     
     @IBOutlet var languageView: UIView!
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         languageView.layer.borderWidth = 1
