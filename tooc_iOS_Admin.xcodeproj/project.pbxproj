@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5226463321DCF7CF004434ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226463221DCF7CF004434ED /* AppDelegate.swift */; };
+		5226463521DCF7CF004434ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226463421DCF7CF004434ED /* MainViewController.swift */; };
+		5226463821DCF7CF004434ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5226463621DCF7CF004434ED /* Main.storyboard */; };
+		5226463A21DCF7D0004434ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5226463921DCF7D0004434ED /* Assets.xcassets */; };
+		5226463D21DCF7D0004434ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5226463B21DCF7D0004434ED /* LaunchScreen.storyboard */; };
+		52BDAD1221DDEA420010C69B /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1121DDEA420010C69B /* DetailInfoTableViewCell.swift */; };
+		52BDAD1421DDEA710010C69B /* DetailPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1321DDEA710010C69B /* DetailPriceTableViewCell.swift */; };
+		52BDAD1621DDEA960010C69B /* DetailPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1521DDEA960010C69B /* DetailPhotoTableViewCell.swift */; };
+		52BDAD1821DDEAC60010C69B /* DetailReserveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1721DDEAC60010C69B /* DetailReserveTableViewCell.swift */; };
+		52BDAD1D21DDEF750010C69B /* StorageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1C21DDEF750010C69B /* StorageDetailViewController.swift */; };
+		52BDAD1F21DDF1490010C69B /* StorageInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1E21DDF1490010C69B /* StorageInfoTableViewCell.swift */; };
+		52BDAD2121DDF15D0010C69B /* StoragePriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2021DDF15D0010C69B /* StoragePriceTableViewCell.swift */; };
+		52BDAD2321DDF16C0010C69B /* StoragePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2221DDF16C0010C69B /* StoragePhotoTableViewCell.swift */; };
+		52BDAD2521DDF17F0010C69B /* StoragePickupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2421DDF17F0010C69B /* StoragePickupTableViewCell.swift */; };
+		52BDAD2821DE02770010C69B /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2721DE02770010C69B /* ReservationViewController.swift */; };
+		52BDAD2A21DE06360010C69B /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */; };
+		52BDAD2C21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */; };
+		52BDAD2E21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */; };
+		52DC7FF621DD114000B5A776 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7FF521DD114000B5A776 /* QRScanViewController.swift */; };
+		52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7FF921DD2CAB00B5A776 /* DetailInfoViewController.swift */; };
+		52E36A7921E8F18800A128C0 /* AdminReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7621E8F18800A128C0 /* AdminReviewViewController.swift */; };
+		52E36A7A21E8F18800A128C0 /* ReviewHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7721E8F18800A128C0 /* ReviewHeaderTableViewCell.swift */; };
+		52E36A7B21E8F18800A128C0 /* ReviewContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7821E8F18800A128C0 /* ReviewContentsTableViewCell.swift */; };
+		52E36A8021E8F26300A128C0 /* StoreGradeReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7D21E8F26200A128C0 /* StoreGradeReview.swift */; };
+		52E36A8121E8F26300A128C0 /* StoreReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7E21E8F26200A128C0 /* StoreReviewModel.swift */; };
+		52E36A8221E8F26300A128C0 /* ReviewUserImgResponseDtos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7F21E8F26200A128C0 /* ReviewUserImgResponseDtos.swift */; };
+		52E36A8421E8F6BF00A128C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A8321E8F6BF00A128C0 /* MyPageViewController.swift */; };
+		52E36A8721E8F79700A128C0 /* MyPageStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A8621E8F79700A128C0 /* MyPageStoreTableViewCell.swift */; };
+		683F464707FB98E7837A5D4D /* Pods_tooc_iOS_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588BD18492CD748E23F655EA /* Pods_tooc_iOS_Admin.framework */; };
+		D1AA1B3E21E8115800C4A457 /* RVNumberScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B3D21E8115800C4A457 /* RVNumberScanViewController.swift */; };
+		D1AA1B4121E816E100C4A457 /* StoreIdxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4021E816E100C4A457 /* StoreIdxModel.swift */; };
+		D1AA1B4321E819C800C4A457 /* ReservationCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4221E819C800C4A457 /* ReservationCodeModel.swift */; };
+		D1AA1B4521E819F800C4A457 /* BagDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4421E819F800C4A457 /* BagDtoListModel.swift */; };
+		D1AA1B4921E81A0E00C4A457 /* BagImgDtosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4821E81A0E00C4A457 /* BagImgDtosModel.swift */; };
+		D1AA1B4B21E8262900C4A457 /* ImgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4A21E8262900C4A457 /* ImgModel.swift */; };
+		D1AA1B4D21E826F100C4A457 /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4C21E826F100C4A457 /* InquiryViewController.swift */; };
+		D1AA1B4F21E827EC00C4A457 /* MyPageSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B4E21E827EC00C4A457 /* MyPageSettingTableViewController.swift */; };
+		D1AA1B5121E8C66200C4A457 /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5021E8C66200C4A457 /* PopUpController.swift */; };
+		D1AA1B5321E8D57800C4A457 /* ReservationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */; };
+		D1AA1B5521E8D5B400C4A457 /* BagDtosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */; };
+		D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */; };
+		D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */; };
+		D1C1338D21E7E44100850847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C1338C21E7E44100850847 /* Login.storyboard */; };
+		D1C1338F21E7F44E00850847 /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */; };
+		D1C1339121E7FD2300850847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339021E7FD2300850847 /* LoginViewController.swift */; };
+		D1C1339421E7FEE600850847 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339321E7FEE600850847 /* APIRouter.swift */; };
+		D1C1339621E7FF1500850847 /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339521E7FF1500850847 /* NetworkRequester.swift */; };
+		D1C1339821E7FF4A00850847 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339721E7FF4A00850847 /* NetworkManager.swift */; };
+		D1C1339B21E7FF9600850847 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339A21E7FF9600850847 /* UIColor.swift */; };
+		D1C1339D21E7FFAC00850847 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339C21E7FFAC00850847 /* Date.swift */; };
+		D1C1339F21E8000C00850847 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339E21E8000C00850847 /* UIViewController.swift */; };
+		D1C133A121E8002A00850847 /* ETC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C133A021E8002A00850847 /* ETC.swift */; };
+		D1C133A421E8008000850847 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C133A321E8008000850847 /* ErrorModel.swift */; };
+		D1C133A621E8042300850847 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C133A521E8042200850847 /* LoginModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34D0340975BB3FAA7C055135 /* Pods-tooc_iOS_Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tooc_iOS_Admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-tooc_iOS_Admin/Pods-tooc_iOS_Admin.release.xcconfig"; sourceTree = "<group>"; };
+		5226462F21DCF7CF004434ED /* tooc_iOS_Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tooc_iOS_Admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5226463221DCF7CF004434ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5226463421DCF7CF004434ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5226463721DCF7CF004434ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5226463921DCF7D0004434ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5226463C21DCF7D0004434ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5226463E21DCF7D0004434ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BDAD1121DDEA420010C69B /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD1321DDEA710010C69B /* DetailPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPriceTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD1521DDEA960010C69B /* DetailPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD1721DDEAC60010C69B /* DetailReserveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReserveTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD1C21DDEF750010C69B /* StorageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDetailViewController.swift; sourceTree = "<group>"; };
+		52BDAD1E21DDF1490010C69B /* StorageInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfoTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2021DDF15D0010C69B /* StoragePriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePriceTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2221DDF16C0010C69B /* StoragePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePhotoTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2421DDF17F0010C69B /* StoragePickupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePickupTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2721DE02770010C69B /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageListHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		52DC7FF521DD114000B5A776 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		52DC7FF921DD2CAB00B5A776 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoViewController.swift; sourceTree = "<group>"; };
+		52E36A7621E8F18800A128C0 /* AdminReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminReviewViewController.swift; sourceTree = "<group>"; };
+		52E36A7721E8F18800A128C0 /* ReviewHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		52E36A7821E8F18800A128C0 /* ReviewContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewContentsTableViewCell.swift; sourceTree = "<group>"; };
+		52E36A7D21E8F26200A128C0 /* StoreGradeReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreGradeReview.swift; sourceTree = "<group>"; };
+		52E36A7E21E8F26200A128C0 /* StoreReviewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreReviewModel.swift; sourceTree = "<group>"; };
+		52E36A7F21E8F26200A128C0 /* ReviewUserImgResponseDtos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewUserImgResponseDtos.swift; sourceTree = "<group>"; };
+		52E36A8321E8F6BF00A128C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		52E36A8621E8F79700A128C0 /* MyPageStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStoreTableViewCell.swift; sourceTree = "<group>"; };
+		588BD18492CD748E23F655EA /* Pods_tooc_iOS_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tooc_iOS_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AA1B3D21E8115800C4A457 /* RVNumberScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVNumberScanViewController.swift; sourceTree = "<group>"; };
+		D1AA1B4021E816E100C4A457 /* StoreIdxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreIdxModel.swift; sourceTree = "<group>"; };
+		D1AA1B4221E819C800C4A457 /* ReservationCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCodeModel.swift; sourceTree = "<group>"; };
+		D1AA1B4421E819F800C4A457 /* BagDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagDtoListModel.swift; sourceTree = "<group>"; };
+		D1AA1B4821E81A0E00C4A457 /* BagImgDtosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagImgDtosModel.swift; sourceTree = "<group>"; };
+		D1AA1B4A21E8262900C4A457 /* ImgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgModel.swift; sourceTree = "<group>"; };
+		D1AA1B4C21E826F100C4A457 /* InquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
+		D1AA1B4E21E827EC00C4A457 /* MyPageSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSettingTableViewController.swift; sourceTree = "<group>"; };
+		D1AA1B5021E8C66200C4A457 /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
+		D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListModel.swift; sourceTree = "<group>"; };
+		D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagDtosModel.swift; sourceTree = "<group>"; };
+		D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveResponseDtoListModel.swift; sourceTree = "<group>"; };
+		D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreResponseDtoListModel.swift; sourceTree = "<group>"; };
+		D1C1338C21E7E44100850847 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
+		D1C1339021E7FD2300850847 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D1C1339321E7FEE600850847 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		D1C1339521E7FF1500850847 /* NetworkRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		D1C1339721E7FF4A00850847 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D1C1339A21E7FF9600850847 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D1C1339C21E7FFAC00850847 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		D1C1339E21E8000C00850847 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D1C133A021E8002A00850847 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
+		D1C133A321E8008000850847 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		D1C133A521E8042200850847 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		EBEA431E7792EE40AF5ECBA3 /* Pods-tooc_iOS_Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tooc_iOS_Admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tooc_iOS_Admin/Pods-tooc_iOS_Admin.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5226462C21DCF7CF004434ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683F464707FB98E7837A5D4D /* Pods_tooc_iOS_Admin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD43C0EB4A7DE483C25B296 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBEA431E7792EE40AF5ECBA3 /* Pods-tooc_iOS_Admin.debug.xcconfig */,
+				34D0340975BB3FAA7C055135 /* Pods-tooc_iOS_Admin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5226462621DCF7CF004434ED = {
+			isa = PBXGroup;
+			children = (
+				5226463121DCF7CF004434ED /* tooc_iOS_Admin */,
+				5226463021DCF7CF004434ED /* Products */,
+				2DD43C0EB4A7DE483C25B296 /* Pods */,
+				96317F95F9436FB3B20FD154 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5226463021DCF7CF004434ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5226462F21DCF7CF004434ED /* tooc_iOS_Admin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5226463121DCF7CF004434ED /* tooc_iOS_Admin */ = {
+			isa = PBXGroup;
+			children = (
+				D1C1339921E7FF7F00850847 /* Extension */,
+				D1C1339221E7FEBF00850847 /* Network */,
+				D1C1338B21E7E42000850847 /* LoginView */,
+				52DC7FF021DD00AE00B5A776 /* MainView */,
+				52DC7FEE21DD008E00B5A776 /* Support */,
+			);
+			path = tooc_iOS_Admin;
+			sourceTree = "<group>";
+		};
+		52BDAD1921DDEC710010C69B /* ReservationDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				52DC7FF921DD2CAB00B5A776 /* DetailInfoViewController.swift */,
+				52BDAD1121DDEA420010C69B /* DetailInfoTableViewCell.swift */,
+				52BDAD1321DDEA710010C69B /* DetailPriceTableViewCell.swift */,
+				52BDAD1521DDEA960010C69B /* DetailPhotoTableViewCell.swift */,
+				52BDAD1721DDEAC60010C69B /* DetailReserveTableViewCell.swift */,
+				D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */,
+			);
+			path = ReservationDetailViews;
+			sourceTree = "<group>";
+		};
+		52BDAD1B21DDED180010C69B /* StorageDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				52BDAD1C21DDEF750010C69B /* StorageDetailViewController.swift */,
+				52BDAD1E21DDF1490010C69B /* StorageInfoTableViewCell.swift */,
+				52BDAD2021DDF15D0010C69B /* StoragePriceTableViewCell.swift */,
+				52BDAD2221DDF16C0010C69B /* StoragePhotoTableViewCell.swift */,
+				52BDAD2421DDF17F0010C69B /* StoragePickupTableViewCell.swift */,
+			);
+			path = StorageDetailViews;
+			sourceTree = "<group>";
+		};
+		52BDAD2621DE024F0010C69B /* ReserviationListViews */ = {
+			isa = PBXGroup;
+			children = (
+				52BDAD1B21DDED180010C69B /* StorageDetailViews */,
+				52BDAD1921DDEC710010C69B /* ReservationDetailViews */,
+				52BDAD2721DE02770010C69B /* ReservationViewController.swift */,
+				52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */,
+				52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */,
+				52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */,
+			);
+			path = ReserviationListViews;
+			sourceTree = "<group>";
+		};
+		52DC7FEE21DD008E00B5A776 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5226463221DCF7CF004434ED /* AppDelegate.swift */,
+				5226463921DCF7D0004434ED /* Assets.xcassets */,
+				5226463B21DCF7D0004434ED /* LaunchScreen.storyboard */,
+				5226463E21DCF7D0004434ED /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		52DC7FF021DD00AE00B5A776 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A7421E8F16500A128C0 /* MyPage */,
+				52BDAD2621DE024F0010C69B /* ReserviationListViews */,
+				5226463621DCF7CF004434ED /* Main.storyboard */,
+				5226463421DCF7CF004434ED /* MainViewController.swift */,
+				52DC7FF521DD114000B5A776 /* QRScanViewController.swift */,
+				D1AA1B3D21E8115800C4A457 /* RVNumberScanViewController.swift */,
+				D1AA1B4C21E826F100C4A457 /* InquiryViewController.swift */,
+				D1AA1B4E21E827EC00C4A457 /* MyPageSettingTableViewController.swift */,
+				D1AA1B5021E8C66200C4A457 /* PopUpController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		52E36A7421E8F16500A128C0 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A8521E8F77900A128C0 /* MyPageMain */,
+				52E36A7521E8F16F00A128C0 /* Reviews */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		52E36A7521E8F16F00A128C0 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A7621E8F18800A128C0 /* AdminReviewViewController.swift */,
+				52E36A7821E8F18800A128C0 /* ReviewContentsTableViewCell.swift */,
+				52E36A7721E8F18800A128C0 /* ReviewHeaderTableViewCell.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		52E36A7C21E8F24B00A128C0 /* StoreReview */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A7F21E8F26200A128C0 /* ReviewUserImgResponseDtos.swift */,
+				52E36A7D21E8F26200A128C0 /* StoreGradeReview.swift */,
+				52E36A7E21E8F26200A128C0 /* StoreReviewModel.swift */,
+			);
+			path = StoreReview;
+			sourceTree = "<group>";
+		};
+		52E36A8521E8F77900A128C0 /* MyPageMain */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A8321E8F6BF00A128C0 /* MyPageViewController.swift */,
+				52E36A8621E8F79700A128C0 /* MyPageStoreTableViewCell.swift */,
+			);
+			path = MyPageMain;
+			sourceTree = "<group>";
+		};
+		96317F95F9436FB3B20FD154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588BD18492CD748E23F655EA /* Pods_tooc_iOS_Admin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1AA1B3F21E816BB00C4A457 /* OwnerModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA1B4021E816E100C4A457 /* StoreIdxModel.swift */,
+				D1AA1B4221E819C800C4A457 /* ReservationCodeModel.swift */,
+				D1AA1B4421E819F800C4A457 /* BagDtoListModel.swift */,
+				D1AA1B4821E81A0E00C4A457 /* BagImgDtosModel.swift */,
+				D1AA1B4A21E8262900C4A457 /* ImgModel.swift */,
+				D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */,
+				D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */,
+				D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */,
+				D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */,
+			);
+			path = OwnerModel;
+			sourceTree = "<group>";
+		};
+		D1C1338B21E7E42000850847 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				D1C1338C21E7E44100850847 /* Login.storyboard */,
+				D1C1339021E7FD2300850847 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		D1C1339221E7FEBF00850847 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D1C1339321E7FEE600850847 /* APIRouter.swift */,
+				D1C1339521E7FF1500850847 /* NetworkRequester.swift */,
+				D1C1339721E7FF4A00850847 /* NetworkManager.swift */,
+				D1C133A221E8006C00850847 /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D1C1339921E7FF7F00850847 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1C1339A21E7FF9600850847 /* UIColor.swift */,
+				D1C1339C21E7FFAC00850847 /* Date.swift */,
+				D1C1339E21E8000C00850847 /* UIViewController.swift */,
+				D1C133A021E8002A00850847 /* ETC.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D1C133A221E8006C00850847 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E36A7C21E8F24B00A128C0 /* StoreReview */,
+				D1AA1B3F21E816BB00C4A457 /* OwnerModel */,
+				D1C133A321E8008000850847 /* ErrorModel.swift */,
+				D1C133A521E8042200850847 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5226462E21DCF7CF004434ED /* tooc_iOS_Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5226464121DCF7D0004434ED /* Build configuration list for PBXNativeTarget "tooc_iOS_Admin" */;
+			buildPhases = (
+				C63A5E97080A570AA66FFBC5 /* [CP] Check Pods Manifest.lock */,
+				5226462B21DCF7CF004434ED /* Sources */,
+				5226462C21DCF7CF004434ED /* Frameworks */,
+				5226462D21DCF7CF004434ED /* Resources */,
+				50C808A588C9FD0DD0724085 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tooc_iOS_Admin;
+			productName = tooc_iOS_Admin;
+			productReference = 5226462F21DCF7CF004434ED /* tooc_iOS_Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5226462721DCF7CF004434ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "신동규";
+				TargetAttributes = {
+					5226462E21DCF7CF004434ED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5226462A21DCF7CF004434ED /* Build configuration list for PBXProject "tooc_iOS_Admin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5226462621DCF7CF004434ED;
+			productRefGroup = 5226463021DCF7CF004434ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5226462E21DCF7CF004434ED /* tooc_iOS_Admin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5226462D21DCF7CF004434ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C1338D21E7E44100850847 /* Login.storyboard in Resources */,
+				5226463D21DCF7D0004434ED /* LaunchScreen.storyboard in Resources */,
+				5226463A21DCF7D0004434ED /* Assets.xcassets in Resources */,
+				5226463821DCF7CF004434ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50C808A588C9FD0DD0724085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tooc_iOS_Admin/Pods-tooc_iOS_Admin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tooc_iOS_Admin/Pods-tooc_iOS_Admin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C63A5E97080A570AA66FFBC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tooc_iOS_Admin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5226462B21DCF7CF004434ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BDAD1421DDEA710010C69B /* DetailPriceTableViewCell.swift in Sources */,
+				D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */,
+				D1C133A621E8042300850847 /* LoginModel.swift in Sources */,
+				52E36A7A21E8F18800A128C0 /* ReviewHeaderTableViewCell.swift in Sources */,
+				D1C1339421E7FEE600850847 /* APIRouter.swift in Sources */,
+				D1AA1B4921E81A0E00C4A457 /* BagImgDtosModel.swift in Sources */,
+				52BDAD2521DDF17F0010C69B /* StoragePickupTableViewCell.swift in Sources */,
+				52E36A8421E8F6BF00A128C0 /* MyPageViewController.swift in Sources */,
+				52BDAD1F21DDF1490010C69B /* StorageInfoTableViewCell.swift in Sources */,
+				D1AA1B5521E8D5B400C4A457 /* BagDtosModel.swift in Sources */,
+				52E36A8021E8F26300A128C0 /* StoreGradeReview.swift in Sources */,
+				D1C1339F21E8000C00850847 /* UIViewController.swift in Sources */,
+				D1C1339821E7FF4A00850847 /* NetworkManager.swift in Sources */,
+				D1C133A421E8008000850847 /* ErrorModel.swift in Sources */,
+				52DC7FF621DD114000B5A776 /* QRScanViewController.swift in Sources */,
+				D1C1339121E7FD2300850847 /* LoginViewController.swift in Sources */,
+				52BDAD1821DDEAC60010C69B /* DetailReserveTableViewCell.swift in Sources */,
+				D1AA1B4D21E826F100C4A457 /* InquiryViewController.swift in Sources */,
+				D1AA1B4F21E827EC00C4A457 /* MyPageSettingTableViewController.swift in Sources */,
+				52BDAD2821DE02770010C69B /* ReservationViewController.swift in Sources */,
+				D1AA1B5121E8C66200C4A457 /* PopUpController.swift in Sources */,
+				D1AA1B4B21E8262900C4A457 /* ImgModel.swift in Sources */,
+				52E36A8221E8F26300A128C0 /* ReviewUserImgResponseDtos.swift in Sources */,
+				52BDAD2321DDF16C0010C69B /* StoragePhotoTableViewCell.swift in Sources */,
+				D1AA1B5321E8D57800C4A457 /* ReservationListModel.swift in Sources */,
+				52E36A8121E8F26300A128C0 /* StoreReviewModel.swift in Sources */,
+				52E36A8721E8F79700A128C0 /* MyPageStoreTableViewCell.swift in Sources */,
+				D1C1339B21E7FF9600850847 /* UIColor.swift in Sources */,
+				D1AA1B4521E819F800C4A457 /* BagDtoListModel.swift in Sources */,
+				5226463521DCF7CF004434ED /* MainViewController.swift in Sources */,
+				52BDAD2A21DE06360010C69B /* ReservationTableViewCell.swift in Sources */,
+				52BDAD1621DDEA960010C69B /* DetailPhotoTableViewCell.swift in Sources */,
+				D1C1338F21E7F44E00850847 /* ReservationDetailViewController.swift in Sources */,
+				52BDAD2E21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift in Sources */,
+				D1AA1B4121E816E100C4A457 /* StoreIdxModel.swift in Sources */,
+				D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */,
+				52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */,
+				D1C133A121E8002A00850847 /* ETC.swift in Sources */,
+				52BDAD1221DDEA420010C69B /* DetailInfoTableViewCell.swift in Sources */,
+				52BDAD1D21DDEF750010C69B /* StorageDetailViewController.swift in Sources */,
+				D1C1339D21E7FFAC00850847 /* Date.swift in Sources */,
+				52BDAD2C21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift in Sources */,
+				52E36A7B21E8F18800A128C0 /* ReviewContentsTableViewCell.swift in Sources */,
+				5226463321DCF7CF004434ED /* AppDelegate.swift in Sources */,
+				52BDAD2121DDF15D0010C69B /* StoragePriceTableViewCell.swift in Sources */,
+				52E36A7921E8F18800A128C0 /* AdminReviewViewController.swift in Sources */,
+				D1C1339621E7FF1500850847 /* NetworkRequester.swift in Sources */,
+				D1AA1B3E21E8115800C4A457 /* RVNumberScanViewController.swift in Sources */,
+				D1AA1B4321E819C800C4A457 /* ReservationCodeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5226463621DCF7CF004434ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5226463721DCF7CF004434ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5226463B21DCF7D0004434ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5226463C21DCF7D0004434ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5226463F21DCF7D0004434ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5226464021DCF7D0004434ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5226464221DCF7D0004434ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEA431E7792EE40AF5ECBA3 /* Pods-tooc_iOS_Admin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
+				INFOPLIST_FILE = "$(SRCROOT)/tooc_iOS_Admin/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dongkyushin.tooc-iOS-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5226464321DCF7D0004434ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D0340975BB3FAA7C055135 /* Pods-tooc_iOS_Admin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
+				INFOPLIST_FILE = "$(SRCROOT)/tooc_iOS_Admin/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dongkyushin.tooc-iOS-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5226462A21DCF7CF004434ED /* Build configuration list for PBXProject "tooc_iOS_Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5226463F21DCF7D0004434ED /* Debug */,
+				5226464021DCF7D0004434ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5226464121DCF7D0004434ED /* Build configuration list for PBXNativeTarget "tooc_iOS_Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5226464221DCF7D0004434ED /* Debug */,
+				5226464321DCF7D0004434ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5226462721DCF7CF004434ED /* Project object */;
+}
