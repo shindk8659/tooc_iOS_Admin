@@ -28,6 +28,11 @@ class MyPageViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    @IBAction func gotoAppSetting(_ sender: Any) {
+        let appSetting = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "appstatus") as! MyPageSettingTableViewController
+        self.navigationController?.pushViewController(appSetting, animated: true)
+        
+    }
     func getMypageData(){
         networkManger.getMyPage { [weak self](mypage, errorModel, error) in
             if mypage == nil && errorModel == nil && error != nil {

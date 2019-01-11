@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import Cosmos
 
 class AdminReviewViewController: UIViewController {
     
     let networkManager = NetworkManager()
     var storeReviewModel :StoreReviewModel?
 
+    @IBOutlet weak var gradeView: CosmosView!
     @IBOutlet weak var reviewCount: UILabel!
     @IBOutlet weak var reviewTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.gradeView.settings.updateOnTouch = false
         self.reviewTableView.delegate = self
         self.reviewTableView.dataSource = self
 
@@ -32,7 +34,8 @@ class AdminReviewViewController: UIViewController {
             }
             else {
                 self?.storeReviewModel = reviews
-                self?.reviewCount.text = "후기 \((reviews?.storeGradeReview?.count)!)개" 
+                self?.reviewCount.text = "후기 \((reviews?.storeGradeReview?.count)!)개"
+                self?.gradeView.rating = (reviews?.storeGradeReview?.grade)!
                 self?.reviewTableView.reloadData()
                 
             }
