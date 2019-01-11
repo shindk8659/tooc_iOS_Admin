@@ -16,9 +16,11 @@ class ReservationViewController: UIViewController {
     var reservationList = [[String:Any]]()
     var storageList = [[String:Any]]()
     let networkManager = NetworkManager()
+    var reservationCode :String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(reservationCode)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.reservationListTableView.delegate = self
         self.reservationListTableView.dataSource = self
