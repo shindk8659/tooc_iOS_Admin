@@ -40,12 +40,12 @@ func network() {
             } else if list?.reserveResponseDtoList?.count == 0 {
                 self?.numberOfSection = 1
                 for storage in (list?.storeResponseDtoList)! {
-                    self?.storageList.append((storage as? [String:Any])!)
+//                    self?.storageList.append((storage as? [String:Any])!)
                 }
             } else {
                 self?.numberOfSection = 1
                 for reservation in (list?.reserveResponseDtoList)! {
-                    self?.storageList.append((reservation as? [String:Any])!)
+//                    self?.storageList.append((reservation as? [String:Any])!)
                 }
             }
         }
