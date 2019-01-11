@@ -29,8 +29,9 @@ class LoginViewController: UIViewController {
                 if login == nil && errorModel == nil && error != nil {
                     self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.")
                 }
-                else if login == nil && errorModel != nil && error == nil {
+                else if login == nil || errorModel != nil && error == nil {
                     self?.showAlertMessage(titleStr:"", messageStr: "이메일과 비밀번호를 확인해주세요.")
+                    print("a\(login), q\(errorModel),w \(error)")
                 }
                 else {
                     self?.userDefaults.set(self?.emailTextField.text, forKey: "email")
@@ -44,7 +45,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
     }
     
     let networkManager = NetworkManager()
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
         if self.userDefaults.bool(forKey: "isLogin") == true {
             let email = self.userDefaults.string(forKey: "email")
             let password = self.userDefaults.string(forKey: "pass")
-            
+
             networkManager.login(email: email! , password: password!) { [weak self](login,errorModel,error) in
                 if login == nil && errorModel == nil && error != nil {
                     self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.")
@@ -69,7 +69,5 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-
     }
-    
 }
