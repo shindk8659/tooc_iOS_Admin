@@ -1,22 +1,17 @@
 //
-//  ReservationTableViewCell.swift
+//  StatusCell.swift
 //  tooc_iOS_Admin
 //
-//  Created by 신동규 on 1/3/19.
+//  Created by seunghwan Lee on 12/01/2019.
 //  Copyright © 2019 신동규. All rights reserved.
 //
 
 import UIKit
 
-class ReservationTableViewCell: UITableViewCell {
+class StatusCell: UITableViewCell {
 
-    @IBOutlet weak var lineImgview: UIImageView!
-    @IBOutlet var userName: UILabel!
-    @IBOutlet var paymentProgress: UILabel!
-    @IBOutlet var date: UILabel!
-    @IBOutlet var time: UILabel!
-    @IBOutlet var rate: UILabel!
-    
+    @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var lineImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
