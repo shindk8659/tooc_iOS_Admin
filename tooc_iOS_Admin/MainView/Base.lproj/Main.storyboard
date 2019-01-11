@@ -170,7 +170,7 @@
         <!--Navigation Controller-->
         <scene sceneID="s8U-A3-0p2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uoH-9H-8To" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="reservenavi" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uoH-9H-8To" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icReservationColor" id="wr0-F0-b5q">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
