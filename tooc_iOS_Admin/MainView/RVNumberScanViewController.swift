@@ -42,6 +42,7 @@ class RVNumberScanViewController: UIViewController {
             }
             else if info == nil && errorModel != nil && error == nil {
                 let msg = errorModel?.message ?? "통신오류"
+                print(errorModel)
                 self?.showAlertMessage(titleStr:"", messageStr: msg)
             }
             else {
