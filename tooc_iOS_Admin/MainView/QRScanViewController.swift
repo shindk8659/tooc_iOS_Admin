@@ -8,18 +8,20 @@
 
 import UIKit
 import AVFoundation
-
+protocol sendReservationCode {
+    func sendCode(code:String)
+}
 class QRScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     @IBOutlet weak var myQRCodeImageView: UIImageView!
    
     let session = AVCaptureSession()
+    var delegate: sendReservationCode?
     var video = AVCaptureVideoPreviewLayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
-       
         self.addBackButton("white")
         let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
         do{
@@ -45,6 +47,8 @@ class QRScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
                 if object.type == AVMetadataObject.ObjectType.qr {
                     self.session.stopRunning()
+                    self.delegate?.sendCode(code: gsno(object.stringValue))
+                    self.tabBarController?.selectedIndex = 1;
                     self.navigationController?.popViewController(animated: true)
                 }
             }

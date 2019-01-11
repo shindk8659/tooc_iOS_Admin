@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     
     @IBAction func qsScanButtonAction(_ sender: Any) {
         let qrscanView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "qrscanview") as! QRScanViewController
+        qrscanView.delegate = self
        self.navigationController?.pushViewController(qrscanView, animated: true)
         
     }
@@ -80,6 +81,21 @@ extension MainViewController: changeTabProtocol {
                 self?.tabBarController?.selectedIndex = 1
             }
         }
+    }
+    
+    
+}
+extension MainViewController : sendReservationCode
+{
+    func sendCode(code: String) {
+    
+        let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reserveview") as! ReservationViewController
+        reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
+        
+        reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+        reservationview.reservationCode = code
+        self.tabBarController?.viewControllers![1] = reservationview
+        self.tabBarController?.selectedIndex = 1
     }
     
     

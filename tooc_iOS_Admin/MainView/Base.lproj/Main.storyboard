@@ -192,7 +192,7 @@
         <!--Reservation View Controller-->
         <scene sceneID="hEg-CK-VcP">
             <objects>
-                <viewController id="aLO-DP-haI" customClass="ReservationViewController" customModule="tooc_iOS_Admin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reserveview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aLO-DP-haI" customClass="ReservationViewController" customModule="tooc_iOS_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SED-R6-kpV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
