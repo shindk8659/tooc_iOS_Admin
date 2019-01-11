@@ -40,11 +40,36 @@ class ReservationDetailViewController: UITableViewController {
     }
     
     @IBAction func didPressAgreement(_ sender: UIButton) {
+        if agreement == false {
+            sender.setImage(UIImage(named: "bt_circle_check_small"), for: .normal)
+            agreement = true
+        } else {
+            sender.setImage(UIImage(named: "btCircleEmpty"), for: .normal)
+            agreement = false
+        }
     }
     
     @IBAction func didPressStore(_ sender: UIButton) {
+        if agreement == false {
+            showAlertMessage(titleStr: "", messageStr: "동의하기 버튼을 체크해 주세요.")
+        } else {
+            networkManager.reserveAndPick(img: [], reserveIdx: reserveIdx) { [weak self] (result, errorModel, error) in
+                if result == nil && errorModel == nil && error != nil {
+                    self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.1")
+                }
+                else if result == nil && errorModel != nil && error == nil {
+                    let msg = errorModel?.message ?? "통신오류"
+                    self?.showAlertMessage(titleStr:"", messageStr: msg)
+                }
+                else {
+                    //
+                }
+            }
+        }
     }
     
+    let networkManager = NetworkManager()
+    var agreement = false
     var bagDtolList:[BagDtoList] = []
     var bagimgurl:[BagImgDtos] = []
     var startTime: Int = 0
@@ -63,7 +88,7 @@ class ReservationDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutSetup()
-        
+        update()
     }
     
     func layoutSetup() {
@@ -86,7 +111,6 @@ class ReservationDetailViewController: UITableViewController {
         userName.text = userName1
         phoneNumb.text = userPhone1
         payment.text = payType
-        totalLuggage.text = "총 \(totalCount)개"
         
         let open = Date(timeIntervalSince1970: TimeInterval(startTime/1000))
         let close = Date(timeIntervalSince1970: TimeInterval(endTime/1000))
@@ -98,46 +122,40 @@ class ReservationDetailViewController: UITableViewController {
         dateFormatter.dateFormat = "a h시 m분"
         checkTime.text = dateFormatter.string(from: open)
         findTime.text = dateFormatter.string(from: close)
+        var count1: Int?
+        var count2: Int?
+        for bag in bagDtolList {
+            switch bag.bagType {
+            case "CARRIER":
+                count1 = bag.bagCount ?? 0
+                self.totalCount += count1!
+            case "ETC":
+                count2 = bag.bagCount ?? 0
+                self.totalCount += count2!
+            default: break
+            }
+            suitcaseRate.text = "\(count1 ?? 0)개: \(price/totalCount)원"
+            luggageRate.text = "\(count2 ?? 0)개: \(price/totalCount)원"
+        }
         
-        let timeInterval = open.timeIntervalSince(close)
-        let date = Date(timeIntervalSince1970: timeInterval)
-        dateFormatter.dateFormat = "총 h시간 m분"
-        totalTime.text = dateFormatter.string(from: date)
-        totalRate.text = "\(price)원 X \(totalCount)개"
+ 
+        let components = Calendar.current.dateComponents([.hour, .minute], from: open, to: close)
         
-        totalRateOfPayment.text = "\(price*totalCount)원"
+        if endTime/1000 - startTime/1000 >= 3600 {
+        totalTime.text = "\(components.hour!)시간 \(components.minute!)분"
+        } else {
+        totalTime.text = "\(components.minute!)분"
+        }
+        
+        totalRate.text = "\(price/totalCount)원 X \(totalCount)개"
+        
+        totalRateOfPayment.text = "\(price)원"
         
         if progressType == "DONE" {
             payCheck.image = UIImage(named: "reservePayRect")
         }
         
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        for bag in bagDtolList {
-            switch bag.bagType {
-            case "CARRIER":
-                let count = bag.bagCount ?? 0
-                self.totalCount += count
-                suitcaseRate.text = "\(count)개: \(price)원"
-            case "ETC":
-                let count = bag.bagCount ?? 0
-                self.totalCount += count
-                luggageRate.text = "\(count)개: \(price)원"
-            default: break
-            }
-        }
-        
-        
-        
+        totalLuggage.text = "총 \(totalCount)개"
         
     }
 

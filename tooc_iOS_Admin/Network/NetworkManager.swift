@@ -33,6 +33,8 @@ class NetworkManager {
         let header:HTTPHeaders = [
             "jwt": gsno(jwt)
         ]
+        
+        print(gsno(jwt))
         let router = APIRouter(url: "/api/owner/store", method: .get, parameters: nil, headers: header)
         NetworkRequester(with: router).request1 { (Idx: StoreIdx?, errorModel:ErrorModel?, error) in
             guard error == nil else {
@@ -47,6 +49,7 @@ class NetworkManager {
         let header:HTTPHeaders = [
             "jwt": gsno(jwt)
         ]
+        
         let storeIdx = UserDefaults.standard.integer(forKey: "storeIdx")
         let url = "/api/owner/reserve/\(storeIdx)/\(code)"
         let router = APIRouter(url: url, method: .get, parameters: nil, headers: header)
@@ -151,7 +154,27 @@ class NetworkManager {
         let header:HTTPHeaders = [
             "jwt": gsno(jwt)
         ]
+        
         let router = APIRouter(url:"/api/owner/mypage/onoff", method: .put, parameters: nil, headers: header)
+        NetworkRequester(with: router).request1 { (result: ErrorModel?, errorModel:ErrorModel? , error) in
+            guard error == nil else {
+                completion(nil,errorModel,error)
+                return
+            }
+            completion(result,errorModel,error)
+        }
+    }
+    
+    func reserveAndPick(img: [String], reserveIdx: Int, completion: @escaping (ErrorModel?,ErrorModel?,Error?) -> Void) {
+        let header:HTTPHeaders = [
+            "jwt": gsno(jwt)
+        ]
+        
+        let param = [
+            "bagImgUrl": img
+        ]
+        
+        let router = APIRouter(url:"/api/owner/reserve/\(reserveIdx)", method: .put, parameters: param, headers: header)
         NetworkRequester(with: router).request1 { (result: ErrorModel?, errorModel:ErrorModel? , error) in
             guard error == nil else {
                 completion(nil,errorModel,error)
