@@ -9,4 +9,7 @@ target 'tooc_iOS_Admin' do
     pod 'Kingfisher'
     pod 'SwiftyJSON'
     pod 'IQKeyboardManagerSwift'
+    pod 'ExpandableCell'
+    pod 'Cosmos'
+
 end
