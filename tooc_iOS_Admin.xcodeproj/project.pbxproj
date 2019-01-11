@@ -25,6 +25,18 @@
 		52BDAD2A21DE06360010C69B /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */; };
 		52BDAD2C21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */; };
 		52BDAD2E21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */; };
+		52DADE8821E926FE00D2377A /* UserTermOfServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8121E926FE00D2377A /* UserTermOfServiceTableViewCell.swift */; };
+		52DADE8921E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8221E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift */; };
+		52DADE8A21E926FE00D2377A /* ServiceTermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8321E926FE00D2377A /* ServiceTermOfServiceViewController.swift */; };
+		52DADE8B21E926FE00D2377A /* WholeTermTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8421E926FE00D2377A /* WholeTermTableViewController.swift */; };
+		52DADE8C21E926FE00D2377A /* HostTermOfServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8521E926FE00D2377A /* HostTermOfServiceTableViewCell.swift */; };
+		52DADE8D21E926FE00D2377A /* UserTermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8621E926FE00D2377A /* UserTermOfServiceViewController.swift */; };
+		52DADE8E21E926FE00D2377A /* HostTermOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE8721E926FE00D2377A /* HostTermOfServiceViewController.swift */; };
+		52DADEA121E9277A00D2377A /* FAQContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DADE9C21E9277A00D2377A /* FAQContentsTableViewCell.xib */; };
+		52DADEA221E9277A00D2377A /* FAQContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE9D21E9277A00D2377A /* FAQContentsTableViewCell.swift */; };
+		52DADEA321E9277A00D2377A /* FAQTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DADE9E21E9277A00D2377A /* FAQTitleTableViewCell.xib */; };
+		52DADEA421E9277A00D2377A /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADE9F21E9277A00D2377A /* FAQViewController.swift */; };
+		52DADEA521E9277A00D2377A /* FAQTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DADEA021E9277A00D2377A /* FAQTitleTableViewCell.swift */; };
 		52DC7FF621DD114000B5A776 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7FF521DD114000B5A776 /* QRScanViewController.swift */; };
 		52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7FF921DD2CAB00B5A776 /* DetailInfoViewController.swift */; };
 		52E36A7921E8F18800A128C0 /* AdminReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E36A7621E8F18800A128C0 /* AdminReviewViewController.swift */; };
@@ -97,6 +109,18 @@
 		52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageListHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		52DADE8121E926FE00D2377A /* UserTermOfServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTermOfServiceTableViewCell.swift; sourceTree = "<group>"; };
+		52DADE8221E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTermOfServiceTableViewCell.swift; sourceTree = "<group>"; };
+		52DADE8321E926FE00D2377A /* ServiceTermOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTermOfServiceViewController.swift; sourceTree = "<group>"; };
+		52DADE8421E926FE00D2377A /* WholeTermTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WholeTermTableViewController.swift; sourceTree = "<group>"; };
+		52DADE8521E926FE00D2377A /* HostTermOfServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostTermOfServiceTableViewCell.swift; sourceTree = "<group>"; };
+		52DADE8621E926FE00D2377A /* UserTermOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTermOfServiceViewController.swift; sourceTree = "<group>"; };
+		52DADE8721E926FE00D2377A /* HostTermOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostTermOfServiceViewController.swift; sourceTree = "<group>"; };
+		52DADE9C21E9277A00D2377A /* FAQContentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAQContentsTableViewCell.xib; sourceTree = "<group>"; };
+		52DADE9D21E9277A00D2377A /* FAQContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQContentsTableViewCell.swift; sourceTree = "<group>"; };
+		52DADE9E21E9277A00D2377A /* FAQTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAQTitleTableViewCell.xib; sourceTree = "<group>"; };
+		52DADE9F21E9277A00D2377A /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		52DADEA021E9277A00D2377A /* FAQTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQTitleTableViewCell.swift; sourceTree = "<group>"; };
 		52DC7FF521DD114000B5A776 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		52DC7FF921DD2CAB00B5A776 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoViewController.swift; sourceTree = "<group>"; };
 		52E36A7621E8F18800A128C0 /* AdminReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminReviewViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +261,43 @@
 			path = ReserviationListViews;
 			sourceTree = "<group>";
 		};
+		52DADE8021E926FE00D2377A /* Termsofservice */ = {
+			isa = PBXGroup;
+			children = (
+				52DADE8121E926FE00D2377A /* UserTermOfServiceTableViewCell.swift */,
+				52DADE8221E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift */,
+				52DADE8321E926FE00D2377A /* ServiceTermOfServiceViewController.swift */,
+				52DADE8421E926FE00D2377A /* WholeTermTableViewController.swift */,
+				52DADE8521E926FE00D2377A /* HostTermOfServiceTableViewCell.swift */,
+				52DADE8621E926FE00D2377A /* UserTermOfServiceViewController.swift */,
+				52DADE8721E926FE00D2377A /* HostTermOfServiceViewController.swift */,
+			);
+			path = Termsofservice;
+			sourceTree = "<group>";
+		};
+		52DADE8F21E9271B00D2377A /* AppSetting */ = {
+			isa = PBXGroup;
+			children = (
+				52DADE9B21E9277A00D2377A /* FAQ */,
+				52DADE8021E926FE00D2377A /* Termsofservice */,
+				D1AA1B4C21E826F100C4A457 /* InquiryViewController.swift */,
+				D1AA1B4E21E827EC00C4A457 /* MyPageSettingTableViewController.swift */,
+			);
+			path = AppSetting;
+			sourceTree = "<group>";
+		};
+		52DADE9B21E9277A00D2377A /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				52DADE9C21E9277A00D2377A /* FAQContentsTableViewCell.xib */,
+				52DADE9D21E9277A00D2377A /* FAQContentsTableViewCell.swift */,
+				52DADE9E21E9277A00D2377A /* FAQTitleTableViewCell.xib */,
+				52DADE9F21E9277A00D2377A /* FAQViewController.swift */,
+				52DADEA021E9277A00D2377A /* FAQTitleTableViewCell.swift */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
 		52DC7FEE21DD008E00B5A776 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,8 +329,6 @@
 				5226463421DCF7CF004434ED /* MainViewController.swift */,
 				52DC7FF521DD114000B5A776 /* QRScanViewController.swift */,
 				D1AA1B3D21E8115800C4A457 /* RVNumberScanViewController.swift */,
-				D1AA1B4C21E826F100C4A457 /* InquiryViewController.swift */,
-				D1AA1B4E21E827EC00C4A457 /* MyPageSettingTableViewController.swift */,
 				D1AA1B5021E8C66200C4A457 /* PopUpController.swift */,
 			);
 			path = MainView;
@@ -278,6 +337,7 @@
 		52E36A7421E8F16500A128C0 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				52DADE8F21E9271B00D2377A /* AppSetting */,
 				52E36A8521E8F77900A128C0 /* MyPageMain */,
 				52E36A7521E8F16F00A128C0 /* Reviews */,
 			);
@@ -453,7 +513,9 @@
 				D1C1338D21E7E44100850847 /* Login.storyboard in Resources */,
 				5226463D21DCF7D0004434ED /* LaunchScreen.storyboard in Resources */,
 				52E36A9D21E9055700A128C0 /* NotoSansCJKkr-Thin.otf in Resources */,
+				52DADEA321E9277A00D2377A /* FAQTitleTableViewCell.xib in Resources */,
 				5226463A21DCF7D0004434ED /* Assets.xcassets in Resources */,
+				52DADEA121E9277A00D2377A /* FAQContentsTableViewCell.xib in Resources */,
 				52E36A9B21E9055700A128C0 /* NotoSansCJKkr-DemiLight.otf in Resources */,
 				52E36A9A21E9055700A128C0 /* NanumSquareR.ttf in Resources */,
 				52E36A9621E9055700A128C0 /* NanumSquareEB.ttf in Resources */,
@@ -532,6 +594,7 @@
 			files = (
 				52BDAD1421DDEA710010C69B /* DetailPriceTableViewCell.swift in Sources */,
 				D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */,
+				52DADE8C21E926FE00D2377A /* HostTermOfServiceTableViewCell.swift in Sources */,
 				D1C133A621E8042300850847 /* LoginModel.swift in Sources */,
 				52E36A7A21E8F18800A128C0 /* ReviewHeaderTableViewCell.swift in Sources */,
 				D1C1339421E7FEE600850847 /* APIRouter.swift in Sources */,
@@ -552,14 +615,18 @@
 				D1AA1B4F21E827EC00C4A457 /* MyPageSettingTableViewController.swift in Sources */,
 				52BDAD2821DE02770010C69B /* ReservationViewController.swift in Sources */,
 				D1AA1B5121E8C66200C4A457 /* PopUpController.swift in Sources */,
+				52DADEA521E9277A00D2377A /* FAQTitleTableViewCell.swift in Sources */,
 				D1AA1B4B21E8262900C4A457 /* ImgModel.swift in Sources */,
 				52E36A8221E8F26300A128C0 /* ReviewUserImgResponseDtos.swift in Sources */,
 				52BDAD2321DDF16C0010C69B /* StoragePhotoTableViewCell.swift in Sources */,
+				52DADE8B21E926FE00D2377A /* WholeTermTableViewController.swift in Sources */,
+				52DADEA421E9277A00D2377A /* FAQViewController.swift in Sources */,
 				D1AA1B5321E8D57800C4A457 /* ReservationListModel.swift in Sources */,
 				52E36A8121E8F26300A128C0 /* StoreReviewModel.swift in Sources */,
 				52E36A8721E8F79700A128C0 /* MyPageStoreTableViewCell.swift in Sources */,
 				D1C1339B21E7FF9600850847 /* UIColor.swift in Sources */,
 				D1AA1B4521E819F800C4A457 /* BagDtoListModel.swift in Sources */,
+				52DADEA221E9277A00D2377A /* FAQContentsTableViewCell.swift in Sources */,
 				5226463521DCF7CF004434ED /* MainViewController.swift in Sources */,
 				52BDAD2A21DE06360010C69B /* ReservationTableViewCell.swift in Sources */,
 				52BDAD1621DDEA960010C69B /* DetailPhotoTableViewCell.swift in Sources */,
@@ -568,6 +635,9 @@
 				D1AA1B4121E816E100C4A457 /* StoreIdxModel.swift in Sources */,
 				D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */,
 				52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */,
+				52DADE8921E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift in Sources */,
+				52DADE8D21E926FE00D2377A /* UserTermOfServiceViewController.swift in Sources */,
+				52DADE8A21E926FE00D2377A /* ServiceTermOfServiceViewController.swift in Sources */,
 				D1C133A121E8002A00850847 /* ETC.swift in Sources */,
 				52BDAD1221DDEA420010C69B /* DetailInfoTableViewCell.swift in Sources */,
 				52BDAD1D21DDEF750010C69B /* StorageDetailViewController.swift in Sources */,
@@ -578,8 +648,10 @@
 				52BDAD2121DDF15D0010C69B /* StoragePriceTableViewCell.swift in Sources */,
 				52E36A7921E8F18800A128C0 /* AdminReviewViewController.swift in Sources */,
 				D1C1339621E7FF1500850847 /* NetworkRequester.swift in Sources */,
+				52DADE8821E926FE00D2377A /* UserTermOfServiceTableViewCell.swift in Sources */,
 				D1AA1B3E21E8115800C4A457 /* RVNumberScanViewController.swift in Sources */,
 				D1AA1B4321E819C800C4A457 /* ReservationCodeModel.swift in Sources */,
+				52DADE8E21E926FE00D2377A /* HostTermOfServiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6D8SYQ63KK;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
 				INFOPLIST_FILE = "$(SRCROOT)/tooc_iOS_Admin/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -747,7 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6D8SYQ63KK;
+				DEVELOPMENT_TEAM = KB65UR5HX8;
 				INFOPLIST_FILE = "$(SRCROOT)/tooc_iOS_Admin/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

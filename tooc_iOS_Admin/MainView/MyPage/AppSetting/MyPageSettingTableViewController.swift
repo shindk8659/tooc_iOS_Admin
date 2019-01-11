@@ -15,7 +15,7 @@ class MyPageSettingTableViewController: UITableViewController {
         super.viewDidLoad()
         languageView.layer.borderWidth = 1
         languageView.layer.borderColor = UIColor.lightGray.cgColor
-        
+        self.addBackButton("black")
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapInside))
         languageView.addGestureRecognizer(tap)
     }
@@ -43,26 +43,21 @@ class MyPageSettingTableViewController: UITableViewController {
             VC.addBackButton("black")
             self.navigationController?.pushViewController(VC, animated: true)
         case 3:
-            let VC = UIStoryboard.init(name: "LoginSignup", bundle: nil).instantiateViewController(withIdentifier: "appguidepageview")
-            self.tabBarController?.hideTabBarAnimated(hide: true)
-            self.navigationController?.pushViewController(VC, animated: true)
+            let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "faqview") as! FAQViewController
             VC.addBackButton("black")
-        case 4:
-//            let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "faqview") as! FAQViewController
-//            VC.addBackButton("black")
-//            self.navigationController?.pushViewController(VC, animated: true)
+            self.navigationController?.pushViewController(VC, animated: true)
             return
-        case 5:
+        case 4:
             let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InquiryViewController") as! InquiryViewController
             VC.addBackButton("black")
             self.navigationController?.pushViewController(VC, animated: true)
         //            showAlertMessage(titleStr: "", messageStr: "준비중인 서비스 입니다.")
-        case 6:
-//            let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "termofservice") as! WholeTermTableViewController
-//            VC.addBackButton("black")
-//            self.navigationController?.pushViewController(VC, animated: true)
+        case 5:
+            let VC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "termofservice") as! WholeTermTableViewController
+            VC.addBackButton("black")
+            self.navigationController?.pushViewController(VC, animated: true)
             return
-        case 7:
+        case 6:
             let alert = UIAlertController(title: "", message: "로그아웃 하시겠습니까?", preferredStyle: .alert)
             let conform = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
                 let userDefaults = UserDefaults()
