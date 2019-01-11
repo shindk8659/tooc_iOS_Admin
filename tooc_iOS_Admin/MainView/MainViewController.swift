@@ -89,12 +89,13 @@ extension MainViewController : sendReservationCode
 {
     func sendCode(code: String) {
     
-        let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reserveview") as! ReservationViewController
+        let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reservenavi")
         reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
         
         reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
-        reservationview.reservationCode = code
-        self.tabBarController?.viewControllers![1] = reservationview
+        let a = reservationview.children[0] as! ReservationViewController
+        a.reservationCode = code
+        self.tabBarController?.viewControllers![1]  = reservationview
         self.tabBarController?.selectedIndex = 1
     }
     
