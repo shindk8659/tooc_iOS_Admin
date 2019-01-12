@@ -73,6 +73,7 @@
 		D1AA1B5521E8D5B400C4A457 /* BagDtosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */; };
 		D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */; };
 		D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */; };
+		D1AA1B5B21E9513200C4A457 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5A21E9513200C4A457 /* StatusCell.swift */; };
 		D1C1338D21E7E44100850847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C1338C21E7E44100850847 /* Login.storyboard */; };
 		D1C1338F21E7F44E00850847 /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */; };
 		D1C1339121E7FD2300850847 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1339021E7FD2300850847 /* LoginViewController.swift */; };
@@ -157,6 +158,7 @@
 		D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagDtosModel.swift; sourceTree = "<group>"; };
 		D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveResponseDtoListModel.swift; sourceTree = "<group>"; };
 		D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreResponseDtoListModel.swift; sourceTree = "<group>"; };
+		D1AA1B5A21E9513200C4A457 /* StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
 		D1C1338C21E7E44100850847 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
 		D1C1339021E7FD2300850847 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				52BDAD2921DE06360010C69B /* ReservationTableViewCell.swift */,
 				52BDAD2B21DE13A10010C69B /* ReservationListHeaderTableViewCell.swift */,
 				52BDAD2D21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift */,
+				D1AA1B5A21E9513200C4A457 /* StatusCell.swift */,
 			);
 			path = ReserviationListViews;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */,
 				52DADE8921E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift in Sources */,
 				52DADE8D21E926FE00D2377A /* UserTermOfServiceViewController.swift in Sources */,
+				D1AA1B5B21E9513200C4A457 /* StatusCell.swift in Sources */,
 				52DADE8A21E926FE00D2377A /* ServiceTermOfServiceViewController.swift in Sources */,
 				D1C133A121E8002A00850847 /* ETC.swift in Sources */,
 				52BDAD1221DDEA420010C69B /* DetailInfoTableViewCell.swift in Sources */,

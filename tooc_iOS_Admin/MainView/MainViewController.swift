@@ -91,7 +91,6 @@ extension MainViewController : sendReservationCode
     
         let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reservenavi")
         reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
-        
         reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         let a = reservationview.children[0] as! ReservationViewController
         a.reservationCode = code
