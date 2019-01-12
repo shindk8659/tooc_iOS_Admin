@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     
     @IBAction func qsScanButtonAction(_ sender: Any) {
         let qrscanView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "qrscanview") as! QRScanViewController
+        qrscanView.delegate = self
        self.navigationController?.pushViewController(qrscanView, animated: true)
         
     }
@@ -23,9 +24,15 @@ class MainViewController: UIViewController {
     }
     
     let networkManager = NetworkManager()
-    
+    let titleImageView = UIImageView.init(image: UIImage.init(named: "tooc"))
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.black
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.titleView = titleImageView
         networkManager.getStoreIdx { [weak self](Idx, errormodel, error) in
             if Idx == nil && errormodel == nil && error != nil {
                 self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.")
@@ -74,6 +81,21 @@ extension MainViewController: changeTabProtocol {
                 self?.tabBarController?.selectedIndex = 1
             }
         }
+    }
+    
+    
+}
+extension MainViewController : sendReservationCode
+{
+    func sendCode(code: String) {
+    
+        let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reservenavi")
+        reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
+        reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+        let a = reservationview.children[0] as! ReservationViewController
+        a.reservationCode = code
+        self.tabBarController?.viewControllers![1]  = reservationview
+        self.tabBarController?.selectedIndex = 1
     }
     
     

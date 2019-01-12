@@ -2,17 +2,17 @@
   "images" : [
     {
       "scale" : "1x",
-      "filename" : "icReservationGrayTab.png",
+      "filename" : "tooc.png",
       "idiom" : "universal"
     },
     {
       "scale" : "2x",
-      "filename" : "icReservationGrayTab@2x.png",
+      "filename" : "tooc@2x.png",
       "idiom" : "universal"
     },
     {
       "scale" : "3x",
-      "filename" : "icReservationGrayTab@3x.png",
+      "filename" : "tooc@3x.png",
       "idiom" : "universal"
     }
   ],

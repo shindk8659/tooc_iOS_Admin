@@ -63,7 +63,7 @@ class ReservationDetailViewController: UITableViewController {
                 }
                 else {
                     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationViewController") as! ReservationViewController
-                    vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_reservation_gray_tab"),tag: 1)
+                    vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationColor"),tag: 1)
                     vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
                     self?.tabBarController?.viewControllers![1] = vc
                     self?.tabBarController?.selectedIndex = 1
