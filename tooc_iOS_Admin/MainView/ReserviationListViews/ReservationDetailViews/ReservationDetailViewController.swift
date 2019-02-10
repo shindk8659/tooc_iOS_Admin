@@ -10,6 +10,7 @@ import UIKit
 
 class ReservationDetailViewController: UITableViewController {
     
+    
     @IBOutlet var bgImgView: UIImageView!
     @IBOutlet var detailView: UIView!
     @IBOutlet var storeBtn: UIButton!
@@ -59,14 +60,24 @@ class ReservationDetailViewController: UITableViewController {
                 }
                 else if result == nil && errorModel != nil && error == nil {
                     let msg = errorModel?.message ?? "통신오류"
+
                     self?.showAlertMessage(titleStr:"", messageStr: msg)
+                    let detailView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reserveview") as! ReservationViewController
+                    self?.tabBarController?.viewControllers![1] = detailView
+                    
                 }
                 else {
-                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationViewController") as! ReservationViewController
-                    vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationColor"),tag: 1)
-                    vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
-                    self?.tabBarController?.viewControllers![1] = vc
+                    let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reservenavi")
+                    let detailView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reserveview") as! ReservationViewController
+                    
+                    reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
+                    reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+                    reservationview.addChild(detailView)
+                    self?.tabBarController?.viewControllers![1]  = reservationview
                     self?.tabBarController?.selectedIndex = 1
+                    
+                    
+                
                 }
             }
         }
@@ -151,7 +162,7 @@ class ReservationDetailViewController: UITableViewController {
         totalTime.text = "\(components.minute!)분"
         }
         
-        totalRate.text = "\(price/totalCount)원 X \(totalCount)개"
+        totalRate.text = "\(Double(price)/Double(totalCount))원 X \(totalCount)개"
         
         totalRateOfPayment.text = "\(price)원"
         

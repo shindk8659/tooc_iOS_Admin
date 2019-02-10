@@ -12,7 +12,7 @@ import Alamofire
 class NetworkManager {
     let jwt = UserDefaults.standard.string(forKey: "jwt")
     
-    func login(email:String, password:String, completion: @escaping (ErrorModel?,ErrorModel?,Error?) -> Void) {
+    func login(email:String, password:String, completion: @escaping (LoginModel?,ErrorModel?,Error?) -> Void) {
         
         let parameters = [
             "email": email,
@@ -20,12 +20,12 @@ class NetworkManager {
         ]
         
         let router = APIRouter(url:"/api/users/login", method: .post, parameters: parameters)
-        NetworkRequester(with: router).request1 { (login: ErrorModel?, errorModel:ErrorModel? , error) in
+        NetworkRequester(with: router).request1 { (login: LoginModel?, errorModel:ErrorModel? , error) in
             guard error == nil else {
                 completion(nil,errorModel,error)
                 return
             }
-            completion(errorModel,errorModel,error)
+            completion(login,errorModel,error)
         }
     }
     
@@ -100,12 +100,12 @@ class NetworkManager {
         }
     }
     
-    func inquireList(completion: @escaping(ReservationListModel?,ErrorModel?,Error?) -> Void) {
+    func inquireList(completion: @escaping(ReservationModel?,ErrorModel?,Error?) -> Void) {
         let header:HTTPHeaders = [
             "jwt": gsno(jwt)
         ]
         let router = APIRouter(url: "/api/owner/reserve", method: .get, parameters: nil, headers: header)
-        NetworkRequester(with: router).request1 { (list: ReservationListModel?, errorModel:ErrorModel? , error) in
+        NetworkRequester(with: router).request1 { (list: ReservationModel?, errorModel:ErrorModel? , error) in
             guard error == nil else {
                 completion(nil,errorModel,error)
                 return
