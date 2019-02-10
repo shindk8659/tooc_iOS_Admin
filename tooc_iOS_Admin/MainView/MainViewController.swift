@@ -64,7 +64,7 @@ extension MainViewController: changeTabProtocol {
             else {
                 print(info)
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationDetailViewController") as! ReservationDetailViewController
-                vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "ic_reservation_gray_tab"),tag: 1)
+                vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
                 vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
                 
                 vc.bagDtolList = (info?.bagDtoList)!
@@ -88,12 +88,41 @@ extension MainViewController: changeTabProtocol {
 extension MainViewController : sendReservationCode
 {
     func sendCode(code: String) {
+        networkManager.getReservationInfo(code: code) {[weak self] (info, errorModel, error) in
+            if info == nil && errorModel == nil && error != nil {
+                self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.1")
+            }
+            else if info == nil && errorModel != nil && error == nil {
+                let msg = errorModel?.message ?? "통신오류"
+                self?.showAlertMessage(titleStr:"", messageStr: msg)
+            }
+            else {
+                print(info)
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationDetailViewController") as! ReservationDetailViewController
+                vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
+                vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+                
+                vc.bagDtolList = (info?.bagDtoList)!
+                vc.bagimgurl = (info?.bagImgDtos)!
+                vc.endTime = ((info?.endTime!)!)
+                vc.payType = (info?.payType)!
+                vc.price = (info?.price)!
+                vc.progressType = (info?.progressType)!
+                vc.reserveIdx = (info?.reserveIdx)!
+                vc.startTime = (info?.startTime)!
+                vc.userName1 = (info?.userName)!
+                vc.userPhone1 = (info?.userPhone)!
+                self?.tabBarController?.viewControllers![1] = vc
+                self?.tabBarController?.selectedIndex = 1
+            }
+        }
     
         let reservationview = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "reservenavi")
+        let detailView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReservationDetailViewController") as! ReservationDetailViewController
+
         reservationview.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "icReservationGrayTab"),tag: 1)
         reservationview.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
-        let a = reservationview.children[0] as! ReservationViewController
-        a.reservationCode = code
+        reservationview.addChild(detailView)
         self.tabBarController?.viewControllers![1]  = reservationview
         self.tabBarController?.selectedIndex = 1
     }

@@ -9,29 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tooc_iOS_Admin/MainView/MyPage/MyPageMain/MyPageViewController.swift"
-            timestampString = "568929549.905856"
+            filePath = "tooc_iOS_Admin/MainView/ReserviationListViews/ReservationViewController.swift"
+            timestampString = "568963408.146443"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "MyPageViewController"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "tooc_iOS_Admin/Network/NetworkManager.swift"
-            timestampString = "568931066.2083271"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "postInquiry(image:content:completion:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,14 +25,62 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tooc_iOS_Admin/MainView/MyPage/AppSetting/InquiryViewController.swift"
-            timestampString = "568937459.672711"
+            filePath = "tooc_iOS_Admin/Network/NetworkRequester.swift"
+            timestampString = "568955709.632025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "didPressComplete(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "request1(completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in tooc_iOS_Admin.NetworkRequester.request1&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(completion: Swift.Optional&lt;(Swift.Optional&lt;A&gt;, Swift.Optional&lt;tooc_iOS_Admin.ErrorModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "tooc_iOS_Admin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shindongkyu/tooc/admin/tooc_iOS_Admin/tooc_iOS_Admin/Network/NetworkRequester.swift"
+                  timestampString = "568955709.756351"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in tooc_iOS_Admin.NetworkRequester.request1&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(completion: Swift.Optional&lt;(Swift.Optional&lt;A&gt;, Swift.Optional&lt;tooc_iOS_Admin.ErrorModel&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "tooc_iOS_Admin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shindongkyu/tooc/admin/tooc_iOS_Admin/tooc_iOS_Admin/Network/NetworkRequester.swift"
+                  timestampString = "568955709.758063"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tooc_iOS_Admin/MainView/ReserviationListViews/ReservationDetailViews/ReservationDetailViewController.swift"
+            timestampString = "568963408.146755"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

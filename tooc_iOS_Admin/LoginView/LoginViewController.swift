@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
                 if login == nil && errorModel == nil && error != nil {
                     self?.showAlertMessage(titleStr:"", messageStr: "네트워크 오류입니다.")
                 }
-                else if login == nil || errorModel != nil && error == nil {
+                else if login == nil && errorModel != nil && error == nil {
                     self?.showAlertMessage(titleStr:"", messageStr: "이메일과 비밀번호를 확인해주세요.")
                     print("a\(login), q\(errorModel),w \(error)")
                 }

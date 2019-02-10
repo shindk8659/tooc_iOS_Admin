@@ -12,6 +12,9 @@
 		5226463821DCF7CF004434ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5226463621DCF7CF004434ED /* Main.storyboard */; };
 		5226463A21DCF7D0004434ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5226463921DCF7D0004434ED /* Assets.xcassets */; };
 		5226463D21DCF7D0004434ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5226463B21DCF7D0004434ED /* LaunchScreen.storyboard */; };
+		528B851321E991F0000784F9 /* ReservationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B850F21E991F0000784F9 /* ReservationModel.swift */; };
+		528B851521E991F0000784F9 /* StoreResponseDtoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B851121E991F0000784F9 /* StoreResponseDtoList.swift */; };
+		528B851621E991F0000784F9 /* ReserveResponseDtoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B851221E991F0000784F9 /* ReserveResponseDtoList.swift */; };
 		52BDAD1221DDEA420010C69B /* DetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1121DDEA420010C69B /* DetailInfoTableViewCell.swift */; };
 		52BDAD1421DDEA710010C69B /* DetailPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1321DDEA710010C69B /* DetailPriceTableViewCell.swift */; };
 		52BDAD1621DDEA960010C69B /* DetailPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BDAD1521DDEA960010C69B /* DetailPhotoTableViewCell.swift */; };
@@ -71,8 +74,6 @@
 		D1AA1B5121E8C66200C4A457 /* PopUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5021E8C66200C4A457 /* PopUpController.swift */; };
 		D1AA1B5321E8D57800C4A457 /* ReservationListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */; };
 		D1AA1B5521E8D5B400C4A457 /* BagDtosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */; };
-		D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */; };
-		D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */; };
 		D1AA1B5B21E9513200C4A457 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1B5A21E9513200C4A457 /* StatusCell.swift */; };
 		D1C1338D21E7E44100850847 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C1338C21E7E44100850847 /* Login.storyboard */; };
 		D1C1338F21E7F44E00850847 /* ReservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */; };
@@ -97,6 +98,9 @@
 		5226463921DCF7D0004434ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5226463C21DCF7D0004434ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5226463E21DCF7D0004434ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528B850F21E991F0000784F9 /* ReservationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationModel.swift; sourceTree = "<group>"; };
+		528B851121E991F0000784F9 /* StoreResponseDtoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreResponseDtoList.swift; sourceTree = "<group>"; };
+		528B851221E991F0000784F9 /* ReserveResponseDtoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveResponseDtoList.swift; sourceTree = "<group>"; };
 		52BDAD1121DDEA420010C69B /* DetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		52BDAD1321DDEA710010C69B /* DetailPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPriceTableViewCell.swift; sourceTree = "<group>"; };
 		52BDAD1521DDEA960010C69B /* DetailPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,8 +160,6 @@
 		D1AA1B5021E8C66200C4A457 /* PopUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpController.swift; sourceTree = "<group>"; };
 		D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationListModel.swift; sourceTree = "<group>"; };
 		D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagDtosModel.swift; sourceTree = "<group>"; };
-		D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveResponseDtoListModel.swift; sourceTree = "<group>"; };
-		D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreResponseDtoListModel.swift; sourceTree = "<group>"; };
 		D1AA1B5A21E9513200C4A457 /* StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
 		D1C1338C21E7E44100850847 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D1C1338E21E7F44E00850847 /* ReservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,16 @@
 				52DC7FEE21DD008E00B5A776 /* Support */,
 			);
 			path = tooc_iOS_Admin;
+			sourceTree = "<group>";
+		};
+		528B84FE21E98C0B000784F9 /* NewReservationModel */ = {
+			isa = PBXGroup;
+			children = (
+				528B850F21E991F0000784F9 /* ReservationModel.swift */,
+				528B851221E991F0000784F9 /* ReserveResponseDtoList.swift */,
+				528B851121E991F0000784F9 /* StoreResponseDtoList.swift */,
+			);
+			path = NewReservationModel;
 			sourceTree = "<group>";
 		};
 		52BDAD1921DDEC710010C69B /* ReservationDetailViews */ = {
@@ -403,8 +415,6 @@
 				D1AA1B4A21E8262900C4A457 /* ImgModel.swift */,
 				D1AA1B5221E8D57800C4A457 /* ReservationListModel.swift */,
 				D1AA1B5421E8D5B400C4A457 /* BagDtosModel.swift */,
-				D1AA1B5621E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift */,
-				D1AA1B5821E8D62900C4A457 /* StoreResponseDtoListModel.swift */,
 			);
 			path = OwnerModel;
 			sourceTree = "<group>";
@@ -443,6 +453,7 @@
 		D1C133A221E8006C00850847 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				528B84FE21E98C0B000784F9 /* NewReservationModel */,
 				52E36A8821E900AF00A128C0 /* MyPageModels */,
 				D1AA1B3F21E816BB00C4A457 /* OwnerModel */,
 				D1C133A321E8008000850847 /* ErrorModel.swift */,
@@ -596,7 +607,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52BDAD1421DDEA710010C69B /* DetailPriceTableViewCell.swift in Sources */,
-				D1AA1B5721E8D5FA00C4A457 /* ReserveResponseDtoListModel.swift in Sources */,
 				52DADE8C21E926FE00D2377A /* HostTermOfServiceTableViewCell.swift in Sources */,
 				D1C133A621E8042300850847 /* LoginModel.swift in Sources */,
 				52E36A7A21E8F18800A128C0 /* ReviewHeaderTableViewCell.swift in Sources */,
@@ -623,6 +633,7 @@
 				52E36A8221E8F26300A128C0 /* ReviewUserImgResponseDtos.swift in Sources */,
 				52BDAD2321DDF16C0010C69B /* StoragePhotoTableViewCell.swift in Sources */,
 				52DADE8B21E926FE00D2377A /* WholeTermTableViewController.swift in Sources */,
+				528B851521E991F0000784F9 /* StoreResponseDtoList.swift in Sources */,
 				52DADEA421E9277A00D2377A /* FAQViewController.swift in Sources */,
 				D1AA1B5321E8D57800C4A457 /* ReservationListModel.swift in Sources */,
 				52E36A8121E8F26300A128C0 /* StoreReviewModel.swift in Sources */,
@@ -636,7 +647,6 @@
 				D1C1338F21E7F44E00850847 /* ReservationDetailViewController.swift in Sources */,
 				52BDAD2E21DE15FB0010C69B /* StorageListHeaderTableViewCell.swift in Sources */,
 				D1AA1B4121E816E100C4A457 /* StoreIdxModel.swift in Sources */,
-				D1AA1B5921E8D62900C4A457 /* StoreResponseDtoListModel.swift in Sources */,
 				52DC7FFA21DD2CAB00B5A776 /* DetailInfoViewController.swift in Sources */,
 				52DADE8921E926FE00D2377A /* ServiceTermOfServiceTableViewCell.swift in Sources */,
 				52DADE8D21E926FE00D2377A /* UserTermOfServiceViewController.swift in Sources */,
@@ -650,6 +660,8 @@
 				52E36A7B21E8F18800A128C0 /* ReviewContentsTableViewCell.swift in Sources */,
 				5226463321DCF7CF004434ED /* AppDelegate.swift in Sources */,
 				52BDAD2121DDF15D0010C69B /* StoragePriceTableViewCell.swift in Sources */,
+				528B851621E991F0000784F9 /* ReserveResponseDtoList.swift in Sources */,
+				528B851321E991F0000784F9 /* ReservationModel.swift in Sources */,
 				52E36A7921E8F18800A128C0 /* AdminReviewViewController.swift in Sources */,
 				D1C1339621E7FF1500850847 /* NetworkRequester.swift in Sources */,
 				52DADE8821E926FE00D2377A /* UserTermOfServiceTableViewCell.swift in Sources */,
